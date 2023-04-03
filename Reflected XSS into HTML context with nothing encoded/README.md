@@ -18,5 +18,8 @@ Result:
 
 ![XSS Result](https://github.com/DJumanto/Portswigger-XSS/blob/main/Reflected%20XSS%20into%20HTML%20context%20with%20nothing%20encoded/xss%20result.png?raw=true)
 
-if we able to insert script tag, then attacker could inject command like XmlHTTPRequest to send user data to attacker.
+if we able to insert script tag, then attacker could inject command like XmlHTTPRequest to send user data to attacker, the could send phising url like this:
+```html
+www.example.com/?q=<script>(evil code)</script>
+```
 
