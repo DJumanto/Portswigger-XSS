@@ -1,7 +1,9 @@
 # Porstwigger XSS Lab WriteUp
 
 ## About XSS
-![XSS_img](https://github.com/DJumanto/Portswigger-XSS/blob/main/img/XSS.png?raw=true)
+<div style="text-align: center;">
+  <img src="https://github.com/DJumanto/Portswigger-XSS/blob/main/img/XSS.png?raw=true" alt="XSS_img">
+</div>
 
 XSS or Cross Site Scripting is an attack technique where attacker insert html tag or arbitary javascript code to attempt attack to the user. Example of XSS attacks are:
 
