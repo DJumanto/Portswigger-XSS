@@ -21,4 +21,9 @@ alt="Home">
 
 It will create an iframe from our lab source, and when it's content is loading, we'll add ``<img src=x onerror=print()>`` code in the url. Automatically, the jquery will execute and instead of change our position to available post, it will check an image from unavailable source image and execute print() javascript function.
 
+The result will be like this:
+<div style="margin-top: 10px; margin-bottom: 10px;"
+alt="Home">
+    <img src="https://github.com/DJumanto/Portswigger-XSS/blob/main/DOM%20XSS%20in%20jQuery%20selector%20sink%20using%20a%20hashchange%20event/result.png/?raw=true">
+</div>
 
