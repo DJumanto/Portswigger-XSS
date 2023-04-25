@@ -10,7 +10,7 @@ Just like most challenges before, we're going to perform this attack in the sear
 ```
 
 Result:
-<img style="margin-top: 20px;" src="https://github.com/DJumanto/Portswigger-XSS/blob/main/Exploiting%20XSS%20to%20perform%20CSRF/Account.png?raw=true" alt="common-tag-attempt">
+<img style="margin-top: 20px;" src="https://github.com/DJumanto/Portswigger-XSS/blob/main/Reflected%20XSS%20into%20HTML%20context%20with%20most%20tags%20and%20attributes%20blocked/common-tag-attempt.png?raw=true" alt="common-tag-attempt">
 
 Seems like we're not able to use common tags. So i tried other tags and found out that ``<body>`` tag was allowed. Next thing we need to find is all attribute that allowed. We can find them in [Portswigger XSS CheatSheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 
@@ -57,6 +57,5 @@ Insert the payload on the exploit server then deliver it:
 ```html
 <iframe src="https://0ace000303a0e49180ffdf7a00cb0021.web-security-academy.net/?search=<body onresize=print()></body>" onload=this.width='200px'></iframe>
 ```
-
 Result:
-<img style="margin-top: 20px;" src="https://github.com/DJumanto/Portswigger-XSS/blob/main/Exploiting%20XSS%20to%20perform%20CSRF/Account.png?raw=true" alt="Result">
+<img style="margin-top: 20px;" src="https://github.com/DJumanto/Portswigger-XSS/blob/main/Reflected%20XSS%20into%20HTML%20context%20with%20most%20tags%20and%20attributes%20blocked/Result.png?raw=true" alt="Result">
